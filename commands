@@ -1,3 +1,6 @@
 docker run --name mysql -d     -p 3306:3306     -e MYSQL_ROOT_PASSWORD=1234   -v mysql:/var/lib/mysql  --restart unless-stopped     mysql
 
 docker exec -it mysql mysql -p
+
+
+docker run --name web -d     -p 5000:5000  --restart unless-stopped    web
